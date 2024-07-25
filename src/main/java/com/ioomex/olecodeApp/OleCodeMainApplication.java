@@ -20,8 +20,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @from <a href="https://github.com/yangwan-cw">yangwan-cw仓库</a>
  */
 // todo 如需开启 Redis，须移除 exclude 中的内容
-@SpringBootApplication(exclude = {RedisAutoConfiguration.class})
-@MapperScan("com.ioomex.olecodeApp.mapper")
+@SpringBootApplication
 @EnableScheduling
 @EnableAspectJAutoProxy(proxyTargetClass = true, exposeProxy = true)
 public class OleCodeMainApplication {
